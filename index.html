@@ -7,6 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+    
+<button>Press Me</button>
+    
     <script>
         
         //javascript goes here
@@ -18,11 +21,22 @@
         // console.log(greeting)
 
         //Joining two variables
-        const one = 'Hello, ';
-        const two = 'How are you?';
-        const joined = `${one}${two}`;
+        // const one = 'Hello, ';
+        // const two = 'How are you?';
+        // const joined = `${one}${two}`;
 
-        console.log(joined)
+        // console.log(joined)
+
+        //Concatenation in context
+
+        const button = document.querySelector('button');
+
+        function greet() {
+            const name = prompt('What is your name?');
+            alert(`Hello ${name}, nice to meet you!`);
+        }
+
+        button.addEventListener('click', greet);
 
 
     </script>
