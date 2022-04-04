@@ -9,12 +9,13 @@
 <body>
     
     <script>
-        if (hour < 18) {
-            greeting = "Good day";
+        if (time < 10) {
+            greeting = "Good Morning";
+        } else if (time < 20) {
+            greeting = "Good Day";
 
         } else {
-            greeting = "Good evening";
-            
+            greeting = "Good Evening";
         }
 
     </script>
