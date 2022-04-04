@@ -9,13 +9,26 @@
 <body>
     
     <script>
-        if (time < 10) {
-            greeting = "Good Morning";
-        } else if (time < 20) {
-            greeting = "Good Day";
+        "use strict";
 
+        let userName = prompt("Who's there?", '');
+
+        if (userName === 'Admin') {
+            
+            let pass = prompt('Password?', '');
+
+            if (pass === 'TheMaster') {
+                alert('Welcome!' );
+            } else if (pass === '' || pass === null) {
+                alert('Canceled' );
+            } else {
+                alert('Wrong Password' );
+            }
+
+        } else if (userName === '' || userName === null) {
+            alert('Canceled' );
         } else {
-            greeting = "Good Evening";
+            alert("I Dont Know You" );
         }
 
     </script>
