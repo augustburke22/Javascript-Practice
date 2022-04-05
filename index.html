@@ -9,27 +9,12 @@
 <body>
     
     <script>
-        "use strict";
 
-        let userName = prompt("Who's there?", '');
+    function add7(number) {
+        console.log(number + 7)
+    }
 
-        if (userName === 'Admin') {
-            
-            let pass = prompt('Password?', '');
-
-            if (pass === 'TheMaster') {
-                alert('Welcome!' );
-            } else if (pass === '' || pass === null) {
-                alert('Canceled' );
-            } else {
-                alert('Wrong Password' );
-            }
-
-        } else if (userName === '' || userName === null) {
-            alert('Canceled' );
-        } else {
-            alert("I Dont Know You" );
-        }
+    add7(9)
 
     </script>
 </body>
